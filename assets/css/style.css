@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;  
+    background-size: 100%;
+}
+
+#container{
+    margin-right: 15%;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+#img img {
+    width: 70%;
+    margin-left: 35%;
+}
+
+#calculator{
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+    color: rgb(111, 39, 133);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#title{
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.5rem;
+}
+
+.input-box label{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.input-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(241, 249, 255);
+    padding: 0.3rem;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+.input-field span, i{
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.input-field input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0 0.5rem ;
+}
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button{
+    appearance: none;
+}
+
+.input-field input:focus{
+    color: rgb(99, 71, 99);
+    outline-color: #ffeeeb;
+}
+
+#calcular {
+    color: #6e1a6a ;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #fff8f8;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calcular:hover{
+    background: #ffeeeb;
+}
+
+#result{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+#bmi{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    margin-top: 5px;
+    border-bottom: 1px solid #ffff;
+}
+
+#bmi span:last-child{
+    font-size: 2rem;
+}
+
+#description{
+    width: 15.5rem;
+    margin-left: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+ }
+
+ #more-infos{
+    text-align: center; 
+    padding: 1rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+#more-infos a:hover{
+    color: rgb(209, 165, 238);
+}
+
+.hidden {
+    display: none;
+}
+
+.normal {
+    color: #16a34a;
+}
+
+.attention {
+    color: #dc2626;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #calculator{
+        padding: 5rem;
+        justify-content: center;   
+    }
+    #img {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    #img {
+        display: none;
+    }
+    #calculator{
+        padding: 5rem;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    #img {
+        display: none;
+    }
+
+    #container {
+        width: 100%;
+        height: 100%;
+    }
+
+    #calculator {
+        justify-content: center;
+    }
+}
